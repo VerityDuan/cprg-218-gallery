@@ -41,7 +41,11 @@ h2{
     margin-right: 0%;
     max-width:36.11rem;
     width:100%;  
-}
+    height: auto; 
+    display: block; /*center tiger*/
+    margin: 0 auto; 
+  }
+
 
 /*main section*/
 main figure{
