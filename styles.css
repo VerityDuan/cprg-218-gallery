@@ -32,16 +32,15 @@ h2{
 
 /* use grid for gallery portion*/
 #gallery-container{
-    place-items:center;
-    
+    place-items:center;   
 }
 
 /*img inside gallery container id*/
 #gallery-container img{
     border-bottom:0.625rem solid #97bf04;
+    margin-right: 0%;
     max-width:36.11rem;
-    width:100%;
-   
+    width:100%;  
 }
 
 /*main section*/
@@ -52,7 +51,7 @@ main figure{
 
 /*nav section*/
  nav{
-    width: 100%;
+    width: 95%;
     align-items: center;
  }
 
@@ -67,7 +66,6 @@ main figure{
     border:solid 0.2rem #97bf04;
     margin: 1rem;
     padding:1rem;
-
  }
 
  nav ul li a{
@@ -80,4 +78,53 @@ main figure{
     background-color: #d9043d;
     color: #fff;
     text-align: center;
+    padding:5%;
  }
+
+  /*for devices less than 1000px Wide*/
+  @media screen and (min-width: 48rem){
+
+header{
+    padding: 0%;
+}
+
+    /*nav section*/
+    nav{
+        display: flex;
+        flex-direction:row;
+        width: 100%;
+        justify-content: center;
+        background-color: #d9043d;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        margin: 0%;
+        padding:0%;
+    }
+
+    nav ul li{
+        border: none;
+        list-style: none;
+    } 
+        
+    
+     /*image section using grid*/
+
+     #gallery-container{
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr ;
+     }
+
+      /*special tiger section*/
+      #gallery-container figure:last-of-type {
+        grid-column: span 2;
+         align-items: center;
+    }
+/*continue to work on tiger*/
+
+
+/*continue to work on tiger*/
+
+  }
