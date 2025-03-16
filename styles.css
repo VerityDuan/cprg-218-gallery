@@ -17,7 +17,6 @@ header{
     padding:1rem;
     gap:1rem;
     background-color: #120323;
-   
 }
 
 
@@ -33,7 +32,6 @@ h2{
 
 /* use grid for gallery portion*/
 #gallery-container{
-    display: grid;
     place-items:center;
     
 }
@@ -43,9 +41,9 @@ h2{
     border-bottom:0.625rem solid #97bf04;
     max-width:36.11rem;
     width:100%;
-    height:auto;
    
 }
+
 /*main section*/
 main figure{
     background-color: #fff;
@@ -55,15 +53,13 @@ main figure{
 /*nav section*/
  nav{
     width: 100%;
-    padding: 0%;
     align-items: center;
  }
 
  nav ul{
-    display: flex;
     padding: 0%;
-    
-  
+    display: flex;
+    flex-direction: column;
  }
 
  nav ul li{
@@ -71,13 +67,12 @@ main figure{
     border:solid 0.2rem #97bf04;
     margin: 1rem;
     padding:1rem;
-  
-    
 
  }
 
  nav ul li a{
     color:#fff;
+    text-decoration: none;
  }
 
  /*footer section*/
@@ -85,5 +80,4 @@ main figure{
     background-color: #d9043d;
     color: #fff;
     text-align: center;
-
  }
