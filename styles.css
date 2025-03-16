@@ -5,6 +5,7 @@
 body{
     font-family: sans-serif;
     background-color: #cccccc;
+    margin:0%;
 }
 
 /*header*/
@@ -19,23 +20,70 @@ header{
    
 }
 
+
 h1{
-    color:#97bf04
+    color:#97bf04;
+    padding: 0%;
+    margin:0%;
+}
+
+h2{
+    text-align: center;
+}
+
+/* use grid for gallery portion*/
+#gallery-container{
+    display: grid;
+    place-items:center;
+    
 }
 
 /*img inside gallery container id*/
 #gallery-container img{
-    border-bottom:10px solid #97bf04
+    border-bottom:0.625rem solid #97bf04;
+    max-width:36.11rem;
+    width:100%;
+    height:auto;
+   
+}
+/*main section*/
+main figure{
+    background-color: #fff;
+    padding: 1.5rem;
 }
 
 /*nav section*/
  nav{
-background-color: #d9043d;
+    width: 100%;
+    padding: 0%;
+    align-items: center;
+ }
 
+ nav ul{
+    display: flex;
+    padding: 0%;
+    
+  
+ }
+
+ nav ul li{
+    background-color: #d9043d;
+    border:solid 0.2rem #97bf04;
+    margin: 1rem;
+    padding:1rem;
+  
+    
+
+ }
+
+ nav ul li a{
+    color:#fff;
  }
 
  /*footer section*/
  footer{
     background-color: #d9043d;
+    color: #fff;
+    text-align: center;
 
  }
