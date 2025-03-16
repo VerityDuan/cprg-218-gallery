@@ -82,7 +82,7 @@ main figure{
  }
 
   /*for devices less than 1000px Wide*/
-  @media screen and (min-width: 48rem){
+  @media screen and (min-width: 768px){
 
 header{
     padding: 0%;
@@ -122,9 +122,25 @@ header{
         grid-column: span 2;
          align-items: center;
     }
-/*continue to work on tiger*/
-
 
 /*continue to work on tiger*/
 
+
+/*For devices greater than or equal to 1000px wide*/
+@media screen and (min-width: 1000px){
+    
+    #gallery-container{
+        display: grid;
+        grid-template: 1fr 1fr 1fr/1fr 1fr 1fr;
+}    
+#gallery-container figure:last-of-type{
+    grid-column: span 2;
+    align-items: center;
+    margin-top: 0%;
+}
+
+}
   }
+  
+
+ 
