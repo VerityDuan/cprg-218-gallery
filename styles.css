@@ -39,17 +39,18 @@ h2{
 #gallery-container img{
     border-bottom:0.625rem solid #97bf04;
     margin-right: 0%;
-    max-width:36.11rem;
+    max-width:650px;
     width:100%;  
     height: auto; 
     display: block; /*center tiger*/
-    margin: 0 auto; 
+    margin: auto; 
   }
 
 
 /*main section*/
 main figure{
     background-color: #fff;
+    grid-template-rows: auto, 2rem;
     padding: 1.5rem;
 }
 
@@ -145,6 +146,8 @@ header{
 #main figure img{
     width:100%;
 }
+
+
 }
   }
   
